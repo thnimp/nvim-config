@@ -26,7 +26,8 @@ local config = {
   },
 
   -- Set colorscheme to use
-  colorscheme = "default_theme",
+  -- colorscheme = "default_theme",
+  colorscheme = "catppuccin",
 
   -- Override highlight groups in any theme
   highlights = {
@@ -62,17 +63,12 @@ local config = {
 
   -- Set dashboard header
   header = {
-    " █████  ███████ ████████ ██████   ██████",
-    "██   ██ ██         ██    ██   ██ ██    ██",
-    "███████ ███████    ██    ██████  ██    ██",
-    "██   ██      ██    ██    ██   ██ ██    ██",
-    "██   ██ ███████    ██    ██   ██  ██████",
-    " ",
-    "    ███    ██ ██    ██ ██ ███    ███",
-    "    ████   ██ ██    ██ ██ ████  ████",
-    "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-    "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-    "    ██   ████   ████   ██ ██      ██",
+    " ████████   ██████  ████████    ██████",
+    "░░███░░███ ███░░███░░███░░███  ███░░███",
+    " ░███ ░░░ ░███████  ░███ ░███ ░███ ░███",
+    " ░███     ░███░░░   ░███ ░███ ░███ ░███",
+    " █████    ░░██████  ████ █████░░██████",
+    "░░░░░      ░░░░░░  ░░░░ ░░░░░  ░░░░░░ ",
   },
 
   -- Default theme configuration
@@ -182,7 +178,8 @@ local config = {
   -- Configure plugins
   plugins = {
     init = {
-      { "folke/tokyonight.nvim" },
+      "catppuccin/nvim",
+      -- { "folke/tokyonight.nvim" },
       -- You can disable default plugins as follows:
       -- ["goolord/alpha-nvim"] = { disable = true },
 
