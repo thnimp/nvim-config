@@ -4,6 +4,7 @@
 -- You can think of a Lua "table" as a dictionary like data structure the
 -- normal format is "key = value". These also handle array like data structures
 -- where a value with no key simply has an implicit numeric key
+require("nvim-treesitter.install").compilers = { "clang" }
 local config = {
 
   -- Configure AstroNvim updates
@@ -217,7 +218,7 @@ local config = {
       -- set up null-ls's on_attach function
       -- NOTE: You can remove this on attach function to disable format on save
       config.on_attach = function(client)
-        if client.resolved_capabilities.document_formatting then
+        if client.server_capabilities.documentFormattingProvider then
           vim.api.nvim_create_autocmd("BufWritePre", {
             desc = "Auto format before save",
             pattern = "<buffer>",
